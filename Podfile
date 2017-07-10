@@ -8,4 +8,5 @@ target 'CT_mainProject' do
   # Uncomment this line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
  pod "A_Category", :path => "../A_Category"
+ pod "BussA", :path => "../BussA"
 end
