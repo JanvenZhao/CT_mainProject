@@ -9,4 +9,6 @@ target 'CT_mainProject' do
   # use_frameworks!
  pod "A_Category", :path => "../A_Category"
  pod "BussA", :path => "../BussA"
+ pod "BussB”, :path => "../BussB”
+
 end
