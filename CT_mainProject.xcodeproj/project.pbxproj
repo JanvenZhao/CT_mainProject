@@ -13,6 +13,10 @@
 		EDAC9C9B1F136D3B00B50D34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDAC9C991F136D3B00B50D34 /* Main.storyboard */; };
 		EDAC9C9D1F136D3B00B50D34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDAC9C9C1F136D3B00B50D34 /* Assets.xcassets */; };
 		EDAC9CA01F136D3B00B50D34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDAC9C9E1F136D3B00B50D34 /* LaunchScreen.storyboard */; };
+		EDE4D9262148DFFB00A6539E /* SubNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE4D91E2148DFFA00A6539E /* SubNavViewController.m */; };
+		EDE4D9272148DFFB00A6539E /* TopLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE4D91F2148DFFA00A6539E /* TopLineViewController.m */; };
+		EDE4D9282148DFFB00A6539E /* UIView+LayoutMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE4D9202148DFFA00A6539E /* UIView+LayoutMethods.m */; };
+		EDE4D9292148DFFB00A6539E /* KTNavScrollTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EDE4D9242148DFFA00A6539E /* KTNavScrollTool.m */; };
 		FC8AEA26E2D7DED5286A6925 /* libPods-CT_mainProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43FBF817C34FAA3A6FBBFFDA /* libPods-CT_mainProject.a */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +33,14 @@
 		EDAC9C9C1F136D3B00B50D34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EDAC9C9F1F136D3B00B50D34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EDAC9CA11F136D3B00B50D34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDE4D91E2148DFFA00A6539E /* SubNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubNavViewController.m; sourceTree = "<group>"; };
+		EDE4D91F2148DFFA00A6539E /* TopLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopLineViewController.m; sourceTree = "<group>"; };
+		EDE4D9202148DFFA00A6539E /* UIView+LayoutMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayoutMethods.m"; sourceTree = "<group>"; };
+		EDE4D9212148DFFA00A6539E /* KTNavScrollTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTNavScrollTool.h; sourceTree = "<group>"; };
+		EDE4D9222148DFFA00A6539E /* SubNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubNavViewController.h; sourceTree = "<group>"; };
+		EDE4D9232148DFFA00A6539E /* TopLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopLineViewController.h; sourceTree = "<group>"; };
+		EDE4D9242148DFFA00A6539E /* KTNavScrollTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTNavScrollTool.m; sourceTree = "<group>"; };
+		EDE4D9252148DFFA00A6539E /* UIView+LayoutMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutMethods.h"; sourceTree = "<group>"; };
 		F24FA2EB8A15F11B88984D7C /* Pods-CT_mainProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CT_mainProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-CT_mainProject/Pods-CT_mainProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +94,7 @@
 		EDAC9C8F1F136D3A00B50D34 /* CT_mainProject */ = {
 			isa = PBXGroup;
 			children = (
+				EDE4D91D2148DFFA00A6539E /* CustomNav */,
 				EDAC9C931F136D3B00B50D34 /* AppDelegate.h */,
 				EDAC9C941F136D3B00B50D34 /* AppDelegate.m */,
 				EDAC9C961F136D3B00B50D34 /* ViewController.h */,
@@ -101,6 +114,21 @@
 				EDAC9C911F136D3B00B50D34 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EDE4D91D2148DFFA00A6539E /* CustomNav */ = {
+			isa = PBXGroup;
+			children = (
+				EDE4D91E2148DFFA00A6539E /* SubNavViewController.m */,
+				EDE4D91F2148DFFA00A6539E /* TopLineViewController.m */,
+				EDE4D9202148DFFA00A6539E /* UIView+LayoutMethods.m */,
+				EDE4D9212148DFFA00A6539E /* KTNavScrollTool.h */,
+				EDE4D9222148DFFA00A6539E /* SubNavViewController.h */,
+				EDE4D9232148DFFA00A6539E /* TopLineViewController.h */,
+				EDE4D9242148DFFA00A6539E /* KTNavScrollTool.m */,
+				EDE4D9252148DFFA00A6539E /* UIView+LayoutMethods.h */,
+			);
+			path = CustomNav;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,9 +253,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDE4D9272148DFFB00A6539E /* TopLineViewController.m in Sources */,
 				EDAC9C981F136D3B00B50D34 /* ViewController.m in Sources */,
 				EDAC9C951F136D3B00B50D34 /* AppDelegate.m in Sources */,
+				EDE4D9282148DFFB00A6539E /* UIView+LayoutMethods.m in Sources */,
 				EDAC9C921F136D3B00B50D34 /* main.m in Sources */,
+				EDE4D9262148DFFB00A6539E /* SubNavViewController.m in Sources */,
+				EDE4D9292148DFFB00A6539E /* KTNavScrollTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +416,7 @@
 				EDAC9CA61F136D3B00B50D34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

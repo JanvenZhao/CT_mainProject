@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <CTMediator+A.h>
 #import <CTMediator+B.h>
+#import "SubNavViewController.h"
 
 @interface ViewController ()
 
@@ -35,6 +36,15 @@
     [btn_b setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     [self.view addSubview:btn_b];
     
+    
+    UIButton *btn_c = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn_c setFrame:CGRectMake(100, 300, 200, 60)];
+    [btn_c addTarget: self action:@selector(pushC) forControlEvents:UIControlEventTouchUpInside];
+    [btn_c setTitle:@"自定义导航栏" forState:UIControlStateNormal];
+    [btn_c setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [self.view addSubview:btn_c];
+    
+    
 }
 
 -(void)push{
@@ -49,6 +59,12 @@
     [self.navigationController pushViewController:a animated:YES];
 }
 
+-(void)pushC{
+    
+    SubNavViewController *sub = [[SubNavViewController alloc] init];
+    [self.navigationController pushViewController:sub animated:YES];
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
